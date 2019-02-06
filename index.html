@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="reset/css" href="assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>Nykr Caption Wizard</title>
+</head>
+
+<body>
+    <header>
+        <h1>New Yorker Caption Contest Caption Generator</h1>
+        <p>Generate unique cartoon captions with just a few clicks</p>
+    </header>
+
+    <container>
+        <div id="whereTheFormGoes">
+
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Choose Location Params
+                </button>
+                <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <p class="dropdown-item locationParam" data-query="Office">Office</p>
+                    <p class="dropdown-item locationParam" data-query="Government">Government</p>
+                    <p class="dropdown-item locationParam" data-query="Marriage">Marriage</p>
+                    <p class="dropdown-item locationParam" data-query="museum">Museum</p>
+                    <p class="dropdown-item locationParam" data-query="island">Island</p>
+                </div>
+            </div>
+
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Choose Char Params
+                </button>
+                <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item charParam" data-query="Salesman">Salesman</a>
+                    <a class="dropdown-item charParam" data-query="dog">Dog</a>
+                    <a class="dropdown-item charParam" data-query="cat">Cat</a>
+                    <a class="dropdown-item charParam" data-query="animal">Animal</a>
+                    <a class="dropdown-item charParam" data-query="caveman">Caveman</a>
+
+                </div>
+            </div>
+
+            <ul id="paramsHere">
+            </ul>
+
+        </div>
+        <div id="captionContainer">
+            <div id="captionText"></div>
+            <button id="captionBtn">Make a Funny</button>
+
+            <button id="clear">Clear a Funny</button>
+        </div>
+
+
+    </container>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+
+</body>
+
+</html>
