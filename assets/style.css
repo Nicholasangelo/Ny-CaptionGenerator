@@ -1,0 +1,27 @@
+.header {
+    text-align: left;
+    background-color: ghostwhite;
+}
+.page{
+    background:ghostwhite;
+}
+.options{
+    background: whitesmoke;
+}
+#whereTheToonGoes{
+    /* position: relative; */
+    /* float: left; */
+    height: 400px;
+    width: 400px;
+    border: inset solid 2px;    
+}
+
+#whereTheFormGoes {
+    /* clear: both; */
+}
+#paramsHere{
+    text-align: left;
+}
+.btn-group{
+    padding-bottom: 3px;
+}

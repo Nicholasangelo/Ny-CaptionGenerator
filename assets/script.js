@@ -30,6 +30,19 @@ $(document).on("click", ".charParam", function (event) {
         })
 })
 
+// SCRAPE
+// axios.get("https://www.newyorker.com/cartoons/contest")
+// .then(function (response) {
+
+//     let $ = cheerio.load(response.data);
+
+//     $("div Image__image___1PhYl CaptionSubmissionStage__cartoon___14mwh").each(function(i, element) {
+
+//         const imgURL = $(element).children("a").attr("url");
+//     })
+// })
+// END SCRAPE
+
 $(document).on("click", ".locationParam", function (event) {
     event.preventDefault();
     console.log($(this).attr("data-query"))

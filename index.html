@@ -17,56 +17,65 @@
 </head>
 
 <body>
-    <header>
-        <h1>New Yorker Caption Contest Caption Generator</h1>
-        <p>Generate unique cartoon captions with just a few clicks</p>
-    </header>
-
-    <container>
-        <div id="whereTheFormGoes">
-
-            <div class="btn-group dropup">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose Location Params
-                </button>
-                <div class="dropdown-menu">
-                    <!-- Dropdown menu links -->
-                    <p class="dropdown-item locationParam" data-query="Office">Office</p>
-                    <p class="dropdown-item locationParam" data-query="Government">Government</p>
-                    <p class="dropdown-item locationParam" data-query="Marriage">Marriage</p>
-                    <p class="dropdown-item locationParam" data-query="museum">Museum</p>
-                    <p class="dropdown-item locationParam" data-query="island">Island</p>
-                </div>
+    <div class="spread row">
+        <div class="page col-sm-6">
+            <div class="header">
+                <h1>New Yorker Caption Contest Caption Generator</h1>
+                <p>Generate unique cartoon captions with just a few clicks</p>
             </div>
-
-            <div class="btn-group dropup">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose Char Params
-                </button>
-                <div class="dropdown-menu">
-                    <!-- Dropdown menu links -->
-                    <a class="dropdown-item charParam" data-query="Salesman">Salesman</a>
-                    <a class="dropdown-item charParam" data-query="dog">Dog</a>
-                    <a class="dropdown-item charParam" data-query="cat">Cat</a>
-                    <a class="dropdown-item charParam" data-query="animal">Animal</a>
-                    <a class="dropdown-item charParam" data-query="caveman">Caveman</a>
+            <div id="midSection">
+                <div id="whereTheToonGoes">
 
                 </div>
+                <div id="captionText"></div>
+
+                <div id="captionContainer">
+
+                    <button id="captionBtn">Make a Funny</button>
+
+                    <button id="clear">Clear a Funny</button>
+                </div>
+
             </div>
-
-            <ul id="paramsHere">
-            </ul>
-
-        </div>
-        <div id="captionContainer">
-            <div id="captionText"></div>
-            <button id="captionBtn">Make a Funny</button>
-
-            <button id="clear">Clear a Funny</button>
+            <div class="col-lg-6">
+                <ul id="paramsHere">
+                </ul>
+            </div>
         </div>
 
+        <div>
+            <div class="options col-sm-6">
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose Location Params
+                    </button>
+                    <div class="dropdown-menu">
+                        <!-- Dropdown menu links -->
+                        <p class="dropdown-item locationParam" data-query="Office">Office</p>
+                        <p class="dropdown-item locationParam" data-query="Government">Government</p>
+                        <p class="dropdown-item locationParam" data-query="Marriage">Marriage</p>
+                        <p class="dropdown-item locationParam" data-query="museum">Museum</p>
+                        <p class="dropdown-item locationParam" data-query="island">Island</p>
+                    </div>
+                </div>
 
-    </container>
+
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose Char Params
+                    </button>
+                    <div class="dropdown-menu">
+                        <!-- Dropdown menu links -->
+                        <a class="dropdown-item charParam" data-query="Salesman">Salesman</a>
+                        <a class="dropdown-item charParam" data-query="dog">Dog</a>
+                        <a class="dropdown-item charParam" data-query="cat">Cat</a>
+                        <a class="dropdown-item charParam" data-query="animal">Animal</a>
+                        <a class="dropdown-item charParam" data-query="caveman">Caveman</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
